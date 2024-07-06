@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TapMe Inc.</title>
+    <style>
+        *,body{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color: #262626;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #wrapper{
+            height: 400px;
+            width: 280px;
+            border-radius: 10px;
+            background-color: beige;
+
+            animation: breathe 3.5s infinite;
+        }
+        #top-div{
+            height: 50%;
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            background-color: #ff5e00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #f6f3ed;
+        }
+        #bottom-div{
+            height: 50%;
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+            background-color: #eeebe6;
+        }
+        .btm-text{
+            padding-left: 20px;
+        }
+        h1{
+            font-size: 120px;
+            margin-top: -60px;
+        }
+        h2{
+            font-size: 30px;
+            padding: 30px 0px 20px 20px;
+        }
+        h3{
+            font-size: 12px;
+            color: #262626;
+        }
+        @keyframes breathe{
+            0%{box-shadow: 0 0 30px 6px wheat}
+            45%,55%{box-shadow: 0 0 15px 3px wheat}
+            100%{box-shadow: 0 0 30px 6px wheat}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="top-div">
+            <h1>ᯤ</h1>
+        </div>
+        <div id="bottom-div">
+            <h2 class="btm-text">Zhang, Lin</h2>
+            <h3 class="btm-text">Founder - TapMe Inc. ᯤ</h3>
+            <h3 class="btm-text">Tel: xxx.xxx.xxxx</h3>
+            <h3 class="btm-text">Email: xxxxx@tapmeinc.com</h3>
+
+        </div>
+    </div>
+</body>
+</html>
